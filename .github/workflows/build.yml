@@ -1,0 +1,40 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up MSVC (x64)
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Configure
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build
+        run: cmake --build build
+
+      - name: Unit tests
+        run: ctest --test-dir build --output-on-failure
+
+      - name: Check translations
+        run: python tools/check_i18n.py
+
+      - name: Package
+        shell: pwsh
+        run: ./tools/package.ps1 -Version dev -Exe build/bin/InfinityClicker.exe
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: InfinityClicker-win64
+          path: dist/*.zip
+          if-no-files-found: error

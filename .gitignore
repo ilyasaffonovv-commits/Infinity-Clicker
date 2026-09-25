@@ -1,0 +1,29 @@
+# build output
+/build/
+/dist/
+/out/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.idb
+CMakeUserPresets.json
+
+# the built executable is published on the Releases page, not committed
+/InfinityClicker.exe
+
+# per-user data created next to the exe when running from the source tree
+/data/
+/data.bak*/
+
+# generated benchmark output (reference runs live in benchmarks/results/)
+/benchmarks/*.md
+/benchmarks/*.csv
+
+# editors
+.vs/
+.vscode/
+*.user
+*.suo
+
+__pycache__/

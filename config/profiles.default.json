@@ -1,0 +1,310 @@
+{
+  "format": "infclick-profiles",
+  "version": 1,
+  "profiles": [
+    {
+      "name": "Default",
+      "trigger": {
+        "chord": {
+          "device": "mouse",
+          "code": 4,
+          "mods": 0,
+          "name": "Mouse Button 5"
+        },
+        "suppress": false,
+        "mouseBackend": "hook"
+      },
+      "action": {
+        "chord": {
+          "device": "mouse",
+          "code": 0,
+          "mods": 0,
+          "name": "Left Mouse"
+        },
+        "downTimeUs": 10000,
+        "repeat": 1,
+        "repeatGapUs": 0,
+        "wheelDelta": 120,
+        "keyMode": "scancode"
+      },
+      "mode": {
+        "type": "hold",
+        "burstCount": 10,
+        "fixedCount": 100,
+        "durationMs": 1000
+      },
+      "speed": {
+        "unit": "cps",
+        "cps": 20,
+        "max": false,
+        "maxBatch": 8,
+        "maxBackpressure": true,
+        "maxInflight": 2000
+      },
+      "timing": {
+        "precision": "standard",
+        "threadPriority": "highest",
+        "latePolicy": "catchup"
+      },
+      "targetApp": {
+        "enabled": false,
+        "process": ""
+      }
+    },
+    {
+      "name": "Minecraft",
+      "trigger": {
+        "chord": {
+          "device": "mouse",
+          "code": 3,
+          "mods": 0,
+          "name": "Mouse Button 4"
+        },
+        "suppress": true,
+        "mouseBackend": "hook"
+      },
+      "action": {
+        "chord": {
+          "device": "mouse",
+          "code": 0,
+          "mods": 0,
+          "name": "Left Mouse"
+        },
+        "downTimeUs": 12000,
+        "repeat": 1,
+        "repeatGapUs": 0,
+        "wheelDelta": 120,
+        "keyMode": "scancode"
+      },
+      "mode": {
+        "type": "hold",
+        "burstCount": 10,
+        "fixedCount": 100,
+        "durationMs": 1000
+      },
+      "speed": {
+        "unit": "cps",
+        "cps": 16,
+        "max": false,
+        "maxBatch": 8,
+        "maxBackpressure": true,
+        "maxInflight": 2000
+      },
+      "timing": {
+        "precision": "standard",
+        "threadPriority": "highest",
+        "latePolicy": "catchup"
+      },
+      "targetApp": {
+        "enabled": true,
+        "process": "javaw.exe; java.exe"
+      }
+    },
+    {
+      "name": "Browser",
+      "trigger": {
+        "chord": {
+          "device": "keyboard",
+          "code": 119,
+          "scan": 66,
+          "extended": false,
+          "mods": 0,
+          "name": "F8"
+        },
+        "suppress": false,
+        "mouseBackend": "hook"
+      },
+      "action": {
+        "chord": {
+          "device": "mouse",
+          "code": 0,
+          "mods": 0,
+          "name": "Left Mouse"
+        },
+        "downTimeUs": 5000,
+        "repeat": 1,
+        "repeatGapUs": 0,
+        "wheelDelta": 120,
+        "keyMode": "scancode"
+      },
+      "mode": {
+        "type": "toggle",
+        "burstCount": 10,
+        "fixedCount": 100,
+        "durationMs": 1000
+      },
+      "speed": {
+        "unit": "cps",
+        "cps": 10,
+        "max": false,
+        "maxBatch": 8,
+        "maxBackpressure": true,
+        "maxInflight": 2000
+      },
+      "timing": {
+        "precision": "eco",
+        "threadPriority": "highest",
+        "latePolicy": "catchup"
+      },
+      "targetApp": {
+        "enabled": false,
+        "process": ""
+      }
+    },
+    {
+      "name": "Testing",
+      "trigger": {
+        "chord": {
+          "device": "keyboard",
+          "code": 118,
+          "scan": 65,
+          "extended": false,
+          "mods": 0,
+          "name": "F7"
+        },
+        "suppress": false,
+        "mouseBackend": "hook"
+      },
+      "action": {
+        "chord": {
+          "device": "mouse",
+          "code": 0,
+          "mods": 0,
+          "name": "Left Mouse"
+        },
+        "downTimeUs": 0,
+        "repeat": 1,
+        "repeatGapUs": 0,
+        "wheelDelta": 120,
+        "keyMode": "scancode"
+      },
+      "mode": {
+        "type": "burst",
+        "burstCount": 100,
+        "fixedCount": 100,
+        "durationMs": 1000
+      },
+      "speed": {
+        "unit": "cps",
+        "cps": 100,
+        "max": false,
+        "maxBatch": 8,
+        "maxBackpressure": true,
+        "maxInflight": 2000
+      },
+      "timing": {
+        "precision": "standard",
+        "threadPriority": "highest",
+        "latePolicy": "catchup"
+      },
+      "targetApp": {
+        "enabled": false,
+        "process": ""
+      }
+    },
+    {
+      "name": "Fast",
+      "trigger": {
+        "chord": {
+          "device": "keyboard",
+          "code": 120,
+          "scan": 67,
+          "extended": false,
+          "mods": 0,
+          "name": "F9"
+        },
+        "suppress": false,
+        "mouseBackend": "hook"
+      },
+      "action": {
+        "chord": {
+          "device": "mouse",
+          "code": 0,
+          "mods": 0,
+          "name": "Left Mouse"
+        },
+        "downTimeUs": 0,
+        "repeat": 1,
+        "repeatGapUs": 0,
+        "wheelDelta": 120,
+        "keyMode": "scancode"
+      },
+      "mode": {
+        "type": "toggle",
+        "burstCount": 10,
+        "fixedCount": 100,
+        "durationMs": 1000
+      },
+      "speed": {
+        "unit": "cps",
+        "cps": 1000,
+        "max": false,
+        "maxBatch": 8,
+        "maxBackpressure": true,
+        "maxInflight": 2000
+      },
+      "timing": {
+        "precision": "ultra",
+        "threadPriority": "highest",
+        "latePolicy": "catchup"
+      },
+      "targetApp": {
+        "enabled": false,
+        "process": ""
+      }
+    },
+    {
+      "name": "Custom",
+      "trigger": {
+        "chord": {
+          "device": "keyboard",
+          "code": 121,
+          "scan": 68,
+          "extended": false,
+          "mods": 0,
+          "name": "F10"
+        },
+        "suppress": false,
+        "mouseBackend": "hook"
+      },
+      "action": {
+        "chord": {
+          "device": "keyboard",
+          "code": 69,
+          "scan": 18,
+          "extended": false,
+          "mods": 0,
+          "name": "E"
+        },
+        "downTimeUs": 15000,
+        "repeat": 1,
+        "repeatGapUs": 0,
+        "wheelDelta": 120,
+        "keyMode": "scancode"
+      },
+      "mode": {
+        "type": "hold",
+        "burstCount": 10,
+        "fixedCount": 100,
+        "durationMs": 1000
+      },
+      "speed": {
+        "unit": "cps",
+        "cps": 25,
+        "max": false,
+        "maxBatch": 8,
+        "maxBackpressure": true,
+        "maxInflight": 2000
+      },
+      "timing": {
+        "precision": "standard",
+        "threadPriority": "highest",
+        "latePolicy": "catchup"
+      },
+      "targetApp": {
+        "enabled": false,
+        "process": ""
+      }
+    }
+  ]
+}

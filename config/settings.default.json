@@ -1,0 +1,29 @@
+{
+  "activeProfile": "Default",
+  "emergencyStop": {
+    "device": "keyboard",
+    "code": 123,
+    "scan": 88,
+    "extended": false,
+    "mods": 3,
+    "name": "Ctrl + Shift + F12"
+  },
+  "armOnLaunch": true,
+  "startMinimized": false,
+  "minimizeToTray": true,
+  "closeToTray": false,
+  "pauseOnOwnWindow": true,
+  "acceptInjectedTriggers": false,
+  "fileLogging": true,
+  "debugLogging": false,
+  "guardian": true,
+  "alwaysOnTop": false,
+  "language": "en",
+  "uiLayout": 2,
+  "window": {
+    "x": 304,
+    "y": 304,
+    "w": 720,
+    "h": 552
+  }
+}
